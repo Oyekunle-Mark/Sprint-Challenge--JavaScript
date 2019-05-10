@@ -26,9 +26,10 @@ consume("Mary", "Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 // ==== Closures ====
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
-// Explanation: Every variable declared outside a function belongs to the global scope. Variables declared inside a function belongs to the
-// local scope. A function can assess every variable in its local scope and its global scope. So the nestedFunction function can assess the
-// internal variable because it is in its global scope. In javaScript, functions can reach out to its parent function
+
+// Explanation: Every variable declared outside a function belongs to its outer scope. Variables declared inside a function belongs to the
+// local scope. A function can assess every variable in its local scope, outer scope and its global scope. So the nestedFunction
+// function can assess the internal variable because it is in its outer scope. In javaScript, functions can reach out to its parent function
 // for variables when it can not find the variable it wants in its local scope.
 
 const external = "I'm outside the function";
